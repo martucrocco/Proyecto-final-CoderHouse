@@ -1,0 +1,18 @@
+body{
+    min-height: 100%;
+    background-image:url(../../img/banner.jpg);
+}
+html{
+    height: 100%;
+}
+.header h1{
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.9em;
+    font-family: 'Barlow', sans-serif;
+}
+h1{
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count:initial
+}

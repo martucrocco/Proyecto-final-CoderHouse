@@ -1,0 +1,110 @@
+body{
+    background-image: url(../img/banner.jpg);
+}
+.header h1{
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.9em;
+    font-family: 'Barlow', sans-serif;
+}
+h1{
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count:initial
+}
+.contenedor{
+    background: transparent;
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(6, 1fr);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+    .contenedor>.header,
+    .contenedor>.pie-historia,
+    .contenedor>.menu {
+    grid-column: 1/7;
+    background-color: darkorchid;
+    color: black;
+    }
+    .menu__clickon{  
+        color: white;  
+        text-decoration: none;  
+        width: 100px;  
+        display: inline-block;  
+        transition: .5s;  
+    }    
+    .menu__items{ 
+        text-decoration: none; 
+        list-style: none;  
+        text-align: center;  
+        background-color: darkorchid;  
+        padding: 0;  
+        margin: 0;  
+        width: 10;  
+    
+    }   
+    a:hover{  
+    
+        background-color: black;  
+    
+     }  
+    
+     nav ul li{  
+    
+        display: inline-block;  
+    
+    }  
+    .pie-historia{
+        text-align: center;
+    }
+    .historia__caja{
+        padding: 15px 15px 20px 15px;
+        background: darkorchid;
+        margin-bottom: 30px;
+        line-height: 26px !important;
+        display: flex;
+        
+        justify-content: space-around;
+        margin: auto;
+        flex-wrap: wrap;
+        
+    }
+    .historia{
+        grid-column: 1/7;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .contenedor>.historia{
+        grid-column: 1/7;
+    }
+    .contenedor>.pie-historia{
+        grid-column: 1/7;
+    }
+    .contenedor>.header,
+    .contenedor>.menu,
+    .contenedor>.pie-historia{
+        background: darkorchid;
+        padding: 20px;
+    }
+    
+    .contenedor>.pie-historia{
+        background: darkorchid;
+        padding: 20px;  
+    }
+    .pie-historia{
+        padding: 15px 15px 20px 15px;
+        background: darkorchid;
+        margin-bottom: 30px;
+        line-height: 26px !important;
+        text-align: center;
+    }
+    
+
+
+
+

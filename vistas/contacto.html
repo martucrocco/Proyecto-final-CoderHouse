@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/styles.css">
+    <title>Contacto</title>
 </head>
 <body>
-    
+    <body>
+    <div class="contenedor3">
+        <header class="header">
+            <h1 class="header__title">¡MADRES DE LA PLAZA, EL PUEBLO LAS ABRAZA!</h1> 
+        </header>
+        <nav class="menu">
+            <ul class="menu__items">
+                <li><a class="menu__clickon" href="../index.html">inicio</a></li>
+                <li><a class="menu__clickon" href="../vistas/historia.html">historia</a></li>
+                <li><a class="menu__clickon" href="../vistas/sumate.html">¡sumate!</a></li>
+                <li><a class="menu__clickon" href="../vistas/nosotros.html">nosotros</a></li>
+                <li><a class="menu__clickon" href="../vistas/contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+        <div class="formulario">
+            <form class="formulario__form" action method="get" enctype="text/plain">
+            
+                <fieldset class="formulario__caja">
+                <strong>INFORMACION PERSONAL</strong>
+                <div>
+                <br>
+                    <label for="name">Nombre y apellido</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <p>
+                <div>
+                    <label for="email">Correo electronico</label>
+                    <input type="email" name="email" id=email>
+                </div> 
+                <p>
+                <div>
+                    <label for="date">Fecha de nacimiento</label>
+                    <input type="date" name="date" id="date" min="2019-06-10">
+                </div>
+                <p>
+                <div>
+                    <label for="age">Edad</label>
+                    <input type="number" name="age" id="age" min="1" max="100">
+                </div>   
+                <p>
+                    <div>
+                        <strong>Genero</strong>
+                    </div>
+                    <label for="gender">masculino</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <div>
+                        <label for="gender">femenino</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                    </div>
+                    <div>
+                        <label for="gender">otro</label>
+                        <input type="radio" name="gender" id="otro" value="otro">
+                    </div>
+                    </fieldset>    
+                
+                
+                
+                <input class="formulario__btn" type="submit" value="enviar formulario">
+                <input class="formulario__btn" type="reset" value="resetear formulario">
+                
+            </form>
+        </div>    
+        <footer class="pie-contacto">MEMORIA|VERDAD|JUSTICIA</footer>
+    </div>
 </body>
 </html>

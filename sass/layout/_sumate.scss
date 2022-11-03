@@ -1,0 +1,109 @@
+body{
+    background-image: url(../img/banner.jpg);
+}
+.header h1{
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.9em;
+    font-family: 'Barlow', sans-serif;
+}
+h1{
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count:initial
+}
+.contenedor3{
+    background: transparent;
+    width: 100%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    
+    
+}
+
+.principal>.article {
+    background: darkgray;
+    padding: 20px;
+    margin-top: 5px;
+    color: #dfe6e9
+}
+
+    .contenedor3>.header,
+    .contenedor3>.pie-sumate,
+    .contenedor3>.menu,
+    .contenedor3>.principal {
+    grid-column: 1/7;
+    background-color: darkorchid;
+    color: black;
+    padding: 20px;
+    }
+    .menu__clickon{  
+        color: white;  
+        text-decoration: none;  
+        width: 100px;  
+        display: inline-block;  
+        transition: .5s;  
+    &__items{ 
+        text-decoration: none; 
+        list-style: none;  
+        text-align: center;  
+        background-color: darkorchid;  
+        padding: 0;  
+        margin: 0;  
+        width: 10;  
+        
+        }   
+    }    
+    a:hover{  
+    
+        background-color: black;  
+    
+     }  
+    
+     nav ul li{  
+    
+        display: inline-block;  
+     }
+     .principal{
+         grid-column: 1/7;
+       
+     }
+     .sumate__heading{
+         background-color: darkorchid;
+         text-align: center;
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         font-size: medium;
+         color: #ffffff;
+        &__ya{
+            padding: 15px 15px 20px 15px;
+            background: darkorchid;
+            margin-bottom: 30px;
+            line-height: 26px !important;
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            flex-wrap: wrap;
+            grid-column: 1/7;
+        }
+    }
+     
+
+    .contenedor3>.principal{
+        grid-column: 1/7;
+    }
+    .contenedor3>.pie-sumate{
+        grid-column: 1/7;
+    }
+    .video{
+        text-align: center;
+        
+        
+    }
+    .pie-sumate{
+        text-align: center;
+    }

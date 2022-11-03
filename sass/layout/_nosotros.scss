@@ -1,0 +1,46 @@
+
+.contenedor3{
+    background: transparent;
+    width: 100%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    
+    
+}
+    .contenedor3>.header,
+    .contenedor3>.pie-nosotros,
+    .contenedor3>.menu,
+    .contenedor3>.principal{
+    grid-column: 1/7;
+    background-color: darkorchid;
+    color: black;
+    padding: 20px;
+    }
+    .contenedor3>.pie-nosotros{
+        grid-column: 1/7;
+    }
+   .principal__title{
+    text-align: center;
+   }
+   .pie-nosotros{
+    text-align: center;
+    margin-bottom: 20px;
+    grid-column: 1/7;
+    background-color: darkorchid;
+    
+}
+.contenedor3>.pie-nosotros{
+    padding: 20px;
+}
+.instagram-media{
+    text-align: center;
+    align-content: center;
+}
+.insta{
+    text-align: center;
+}

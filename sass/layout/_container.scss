@@ -1,0 +1,53 @@
+.container{
+    background: transparent;
+    width: 100%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+      "header header header" 
+      "menu menu menu"  
+      "imagenes imagenes imagenes" 
+      "principal principal principal"
+      "pie pie pie";
+    grid-template-rows: repeat(6, 0,1fr);
+    grid-template-columns: repeat(6, 0,1fr);
+}
+
+.container>.header,
+.container>.menu, 
+.container>.principal,
+.container>.imagenes,
+.container>.pie,
+.container>div {
+background: darkorchid;
+padding: 20px;
+
+
+}
+.container>.header,
+.container>.pie,
+.container>.menu {
+
+background-color: darkorchid;
+color: black;
+grid-column: 1/7;
+}
+
+.container>.principal {
+grid-column: 1/7;
+
+}
+.container>.imagenes {
+grid-column: 1/7;
+background: darkorchid;
+color: #ffffff;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.container .imagenes{
+display: flex;
+width: 100%;
+}

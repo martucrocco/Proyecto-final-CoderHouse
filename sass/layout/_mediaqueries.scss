@@ -1,0 +1,13 @@
+/*------MEDIA QUERIES INDEX-------*/
+@media screen and (max-width:425px) {
+    .container{
+        grid-template-areas:
+        "header header header"  100px
+        "menu menu menu"  50px
+        "imagenes imagenes imagenes" 250px
+        "principal principal principal"    auto
+        "pie pie pie"  50px;
+
+    }
+}
+    

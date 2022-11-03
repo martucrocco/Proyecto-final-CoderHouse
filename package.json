@@ -1,0 +1,18 @@
+{
+  "name": "paquete-aprendiz",
+  "version": "1.0.0",
+  "description": "tratando de compilar sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/main.scss estilos/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "compile-sass":"node-sass sass/main.scss estilos/styles.css --watch"
+  },
+  "author": "Martina Crocco",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
