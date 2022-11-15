@@ -375,7 +375,18 @@ nav ul li {
   grid-column: 1/7; }
 
 .video {
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden; }
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .pie-sumate {
   text-align: center; }
@@ -467,4 +478,12 @@ nav ul li {
 /*------MEDIA QUERIES INDEX-------*/
 @media screen and (max-width: 425px) {
   .container {
-    grid-template-areas: "header header header"  100px "menu menu menu"  50px "imagenes imagenes imagenes" 250px "principal principal principal"    auto "pie pie pie"  50px; } }
+    grid-template-areas: "header header header"  100px "menu menu menu"  50px "imagenes imagenes imagenes" 250px "principal principal principal"    auto "pie pie pie"  50px; }
+  .video {
+    overflow-x: hidden; } }
+
+@media (min-width: 320px) {
+  .video {
+    width: 200px;
+    height: 150px;
+    overflow: hidden; } }

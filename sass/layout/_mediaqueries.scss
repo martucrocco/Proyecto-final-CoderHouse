@@ -7,14 +7,14 @@
         "imagenes imagenes imagenes" 250px
         "principal principal principal"    auto
         "pie pie pie"  50px;
-
-    }
+      }
+    
 }
-@media (min-width: 320px) {
+@media screen and (max-width: 320px) {
 
     .video {
-      width: 200px;
-      height: 150px;
+      width: 560px;
+      height: 315px;
       overflow: hidden;
     } 
   
