@@ -35,7 +35,11 @@ h1 {
   margin: 1.6em auto;
   display: grid;
   gap: 10px;
-  grid-template-areas: "header header header"  "menu menu menu"   "imagenes imagenes imagenes"  "principal principal principal" "pie pie pie";
+  grid-template-areas: "header header header" 
+ "menu menu menu"  
+ "imagenes imagenes imagenes" 
+ "principal principal principal"
+ "pie pie pie";
   grid-template-rows: repeat(6, 0, 1fr);
   grid-template-columns: repeat(6, 0, 1fr); }
 
@@ -382,6 +386,7 @@ nav ul li {
   overflow: hidden; }
 
 .video iframe {
+  grid-column: 1/7;
   position: absolute;
   top: 0;
   left: 0;
@@ -478,12 +483,14 @@ nav ul li {
 /*------MEDIA QUERIES INDEX-------*/
 @media screen and (max-width: 425px) {
   .container {
-    grid-template-areas: "header header header"  100px "menu menu menu"  50px "imagenes imagenes imagenes" 250px "principal principal principal"    auto "pie pie pie"  50px; }
-  .video {
-    overflow-x: hidden; } }
+    grid-template-areas: "header header header"  100px
+ "menu menu menu"  50px
+ "imagenes imagenes imagenes" 250px
+ "principal principal principal"    auto
+ "pie pie pie"  50px; } }
 
-@media (min-width: 320px) {
+@media screen and (max-width: 320px) {
   .video {
-    width: 200px;
-    height: 150px;
+    width: 560px;
+    height: 315px;
     overflow: hidden; } }
